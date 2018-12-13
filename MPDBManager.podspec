@@ -8,14 +8,14 @@ Pod::Spec.new do |spec|
         :git => "https://github.com/shc-vj/MPDBManager.git",
         :tag => spec.version.to_s
     }
-    spec.authors             = { 
-        'Paweł Czernikowski'
-    }
+    spec.authors             = 'Paweł Czernikowski'
     spec.requires_arc       = true
     spec.platforms          = {
         :ios => '6.0',
         :osx => '10.7'
     }
-    spec.source_files       = 'src'
-    spec.public_header_files  = 'src/*'
+    spec.source_files       = 'src/*.m', 'src/*.swift'
+    spec.public_header_files  = 'src/*.h' 
+    
+    spec.dependency 'FMDB'
 end
