@@ -18,6 +18,5 @@ Pod::Spec.new do |spec|
     spec.source_files       = 'src/*.m', 'src/*.swift'
     spec.public_header_files  = 'src/*.h' 
     
-    spec.modular_headers    = true
     spec.dependency 'FMDB'
 end
