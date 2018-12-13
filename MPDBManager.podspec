@@ -14,7 +14,6 @@ Pod::Spec.new do |spec|
         :ios => '7.0',
         :osx => '10.7'
     }
-    spec.swift_version = '3.2'
     spec.source_files       = 'src'
     spec.public_header_files  = 'src/*.h' 
     
