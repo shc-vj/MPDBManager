@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
     spec.authors             = 'Paweł Czernikowski'
     spec.requires_arc       = true
     spec.platforms          = {
-        :ios => '6.0',
+        :ios => '7.0',
         :osx => '10.7'
     }
     spec.swift_version = '3.2'
