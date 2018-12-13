@@ -7,6 +7,7 @@
 //
 
 #import "FMDatabaseQueue+Database.h"
+#import "FMDatabaseQueue.h"
 
 @implementation FMDatabaseQueue (Database)
 

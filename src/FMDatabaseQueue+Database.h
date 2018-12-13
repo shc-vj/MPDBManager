@@ -6,7 +6,7 @@
 //  Copyright © 2016 Medycyna Praktyczna. All rights reserved.
 //
 
-#import "FMDatabaseQueue.h"
+@class  FMDatabase;
 
 @interface FMDatabaseQueue (Database)
 

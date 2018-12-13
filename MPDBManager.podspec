@@ -15,7 +15,5 @@ Pod::Spec.new do |spec|
         :osx => '10.7'
     }
     spec.source_files       = 'src'
-    spec.public_header_files  = 'src/*.h' 
     
-    spec.dependency 'FMDB'
 end
