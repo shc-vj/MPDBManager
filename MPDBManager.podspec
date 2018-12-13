@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
         :ios => '7.0',
         :osx => '10.8'
     }
-    spec.framework         = 'Foundation'
+    spec.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
     spec.source_files       = 'src'
     
     spec.dependency 'FMDB'
