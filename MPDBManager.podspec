@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
     spec.requires_arc       = 'MPDBManager.m'
     spec.platforms          = {
         :ios => '7.0',
-        :osx => '10.7'
+        :osx => '10.8'
     }
     spec.framework         = 'Foundation'
     spec.source_files       = 'src'

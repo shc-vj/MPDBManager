@@ -1,0 +1,6 @@
+framework module MPDBManager {
+  umbrella header "MPDBManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
