@@ -13,6 +13,7 @@ Pod::Spec.new do |spec|
         :ios => '7.0',
         :osx => '10.7'
     }
+    spec.framework         = 'Dispatch'
     spec.source_files       = 'src'
     
     spec.dependency 'FMDB'
