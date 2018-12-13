@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
         :tag => spec.version.to_s
     }
     spec.authors             = 'Paweł Czernikowski'
-    spec.requires_arc       = true
+    spec.requires_arc       = 'MPDBManager.m'
     spec.platforms          = {
         :ios => '7.0',
         :osx => '10.7'
