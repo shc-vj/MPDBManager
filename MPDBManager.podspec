@@ -5,8 +5,7 @@ Pod::Spec.new do |spec|
     spec.summary            = 'SQLITE database access based on FMDB + addidtions'
     spec.homepage           = 'https://github.com/shc-vj/MPDBManager.git' 
     spec.source             = {
-        :git => "https://github.com/shc-vj/MPDBManager.git",
-        :tag => spec.version.to_s
+        :git => "https://github.com/shc-vj/MPDBManager.git"
     }
     spec.authors             = 'Paweł Czernikowski'
     spec.requires_arc       = 'MPDBManager.m'
