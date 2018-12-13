@@ -10,11 +10,17 @@ Pod::Spec.new do |spec|
     spec.authors             = 'Paweł Czernikowski'
     spec.requires_arc       = 'MPDBManager.m'
     spec.platforms          = {
-        :ios => '7.0',
+        :ios => '6.0',
         :osx => '10.8'
     }
-    spec.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
     spec.source_files       = 'src'
+
+    spec.user_target_xcconfig = {
+        'CLANG_ENABLE_MODULES'                                  => 'YES',
+        'CLANG_MODULES_AUTOLINK'                                => 'YES',
+        'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
+    }
     
     spec.dependency 'FMDB'
+    
 end
