@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
     spec.authors             = 'Paweł Czernikowski'
     spec.requires_arc       = 'MPDBManager.m'
     spec.platforms          = {
-        :ios => '7.0',
+        :ios => '8.0',
         :osx => '10.8'
     }
     spec.source_files       = 'src'
