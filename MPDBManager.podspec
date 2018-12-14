@@ -14,6 +14,7 @@ Pod::Spec.new do |spec|
         :osx => '10.8'
     }
     spec.source_files       = 'src'
+    spec.swift_version = '4.0'
 
     spec.pod_target_xcconfig = {
     	'DEFINES_MODULE' => 'YES'
