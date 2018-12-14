@@ -6,6 +6,8 @@
 //  Copyright © 2016 Medycyna Praktyczna. All rights reserved.
 //
 
+@import FMDB;
+
 #include "FMDatabaseQueue.h"
 
 @interface FMDatabaseQueue (Database)
