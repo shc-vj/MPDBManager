@@ -15,6 +15,9 @@ Pod::Spec.new do |spec|
     }
     spec.source_files       = 'src'
 
+    spec.pod_target_xcconfig = {
+    	'DEFINES_MODULE' => 'YES'
+    }
     spec.user_target_xcconfig = {
         'CLANG_ENABLE_MODULES'                                  => 'YES',
         'CLANG_MODULES_AUTOLINK'                                => 'YES',
