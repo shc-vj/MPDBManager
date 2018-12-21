@@ -14,31 +14,31 @@ Pod::Spec.new do |spec|
 			:osx => '10.8'
 		}
 
-    spec.subspec 'Core' do |sp|
-		sp.requires_arc       = 'MPDBManager.m'
-		sp.platforms          = {
+    spec.subspec 'Core' do |sp1|
+		sp1.requires_arc       = 'MPDBManager.m'
+		sp1.platforms          = {
 			:ios => '7.0',
 			:osx => '10.8'
 		}
-		sp.source_files       = 'src/Objc'
+		sp1.source_files       = 'src/Objc'
 
-		sp.user_target_xcconfig = {
+		sp1.user_target_xcconfig = {
 			'CLANG_ENABLE_MODULES'                                  => 'YES',
 			'CLANG_MODULES_AUTOLINK'                                => 'YES',
 			'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
 		}
 	
-		sp.dependency 'FMDB'
+		sp1.dependency 'FMDB'
 	end
 	
-	spec.subspec 'Swift' do |sp|
-		sp.platforms          = {
+	spec.subspec 'Swift' do |sp2|
+		sp2.platforms          = {
 			:ios => '7.0',
 			:osx => '10.8'
 		}
 
-		sp.source_files		= 'src/Swift'
-		sp.dependency	'MPDBManager/Core'
+		sp2.source_files		= 'src/Swift'
+		sp2.dependency	'MPDBManager/Core'
 	end
     
 end
