@@ -9,6 +9,11 @@ Pod::Spec.new do |spec|
     }
     spec.authors             = 'Paweł Czernikowski'
     
+    spec.platforms          = {
+			:ios => '7.0',
+			:osx => '10.8'
+		}
+
     spec.subspec 'Core' do |sp|
 		sp.requires_arc       = 'MPDBManager.m'
 		sp.platforms          = {
@@ -27,6 +32,11 @@ Pod::Spec.new do |spec|
 	end
 	
 	spec.subspec 'Swift' do |sp|
+		sp.platforms          = {
+			:ios => '7.0',
+			:osx => '10.8'
+		}
+
 		sp.source_files		= 'src/Swift'
 		sp.dependency	'MPDBManager/Core'
 	end
