@@ -8,19 +8,27 @@ Pod::Spec.new do |spec|
         :git => "https://github.com/shc-vj/MPDBManager.git"
     }
     spec.authors             = 'Paweł Czernikowski'
-    spec.requires_arc       = 'MPDBManager.m'
-    spec.platforms          = {
-        :ios => '7.0',
-        :osx => '10.8'
-    }
-    spec.source_files       = 'src'
-
-    spec.user_target_xcconfig = {
-        'CLANG_ENABLE_MODULES'                                  => 'YES',
-        'CLANG_MODULES_AUTOLINK'                                => 'YES',
-        'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
-    }
     
-    spec.dependency 'FMDB'
+    spec.subspec 'Core' do |sp|
+		sp.requires_arc       = 'MPDBManager.m'
+		sp.platforms          = {
+			:ios => '7.0',
+			:osx => '10.8'
+		}
+		sp.source_files       = 'src/Objc'
+
+		sp.user_target_xcconfig = {
+			'CLANG_ENABLE_MODULES'                                  => 'YES',
+			'CLANG_MODULES_AUTOLINK'                                => 'YES',
+			'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
+		}
+	
+		sp.dependency 'FMDB'
+	end
+	
+	spec.subspec 'Swift' do |sp|
+		sp.source_files		= 'src/Swift'
+		sp.dependency	'MPDBManager/Core'
+	end
     
 end
